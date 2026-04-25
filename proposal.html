@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hahow X 小飛｜全民通識課・公益贊助案</title>
+<meta name="description" content="第一堂戶外戲水指南課程｜守護生命 X 社會責任 X 全民教育 X 實景外拍。讓每一次出發，都可以平安回家。" />
+<meta property="og:title" content="Hahow X 小飛｜公益贊助案介紹" />
+<meta property="og:description" content="台灣第一堂走入實境的戶外救命課，邀請企業共同守護每一位走入山林與溪水的探險者。" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Hahow Brand Palette
+       - 主色 Hahow green:        #05ADA2
+       - 主色 Hahow light green:  #00D1B4
+       - 子品牌 Business blue:    #024A6B
+       - 子品牌 Campus yellow:    #EAAA2B
+    */
+    --bg: #ffffff;
+    --bg-soft: #f3faf9;            /* very light teal tint */
+    --bg-card: #ffffff;
+    --ink: #0a2533;                /* near-black with blue cast */
+    --ink-2: #2a4453;
+    --ink-3: #5e7682;
+    --line: #d9ecea;
+    --teal: #00D1B4;               /* Hahow light green - bright accent */
+    --teal-deep: #05ADA2;          /* Hahow green - primary brand */
+    --teal-ink: #024A6B;           /* Hahow business blue - dark contrast */
+    --teal-soft: #66E4D2;          /* light teal for highlights on dark */
+    --gold: #EAAA2B;               /* Hahow campus yellow - tier highlight */
+    --gold-deep: #C68A18;
+    --shadow: 0 10px 30px rgba(2,74,107,.08);
+    --shadow-lg: 0 20px 60px rgba(2,74,107,.14);
+    --radius: 16px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0; padding:0;}
+  body{
+    font-family: "Noto Sans TC","Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  img{max-width:100%; display:block;}
+  a{color: var(--teal-deep); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  /* ---------- Layout ---------- */
+  .container{max-width:1180px; margin:0 auto; padding:0 24px;}
+  section{padding: 96px 0; position: relative;}
+  section.tight{padding: 72px 0;}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:10px;
+    color: var(--teal-deep); font-weight:700; font-size:14px; letter-spacing:.12em;
+    text-transform: uppercase; margin-bottom: 14px;
+  }
+  .eyebrow::before{
+    content:""; width: 4px; height: 20px; background: var(--teal); border-radius: 2px;
+  }
+  h1, h2, h3{ color: var(--ink); margin: 0 0 16px; line-height: 1.25; letter-spacing:-.01em;}
+  h2{ font-size: clamp(28px, 3.4vw, 40px); font-weight: 900;}
+  h3{ font-size: clamp(20px, 2.2vw, 26px); font-weight: 700;}
+  p{ color: var(--ink-2); margin: 0 0 14px;}
+  .lead{ font-size: 18px; color: var(--ink-2);}
+
+  /* ---------- Nav ---------- */
+  .nav{
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255,255,255,.85);
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner{
+    max-width: 1180px; margin: 0 auto; padding: 14px 24px;
+    display:flex; align-items:center; justify-content: space-between; gap: 16px;
+  }
+  .brand{ display:flex; align-items:center; gap: 12px; font-weight: 800; color: var(--ink); font-size: 14px;}
+  .brand img.brand-logo{ height: 28px; width: auto; display: block;}
+  .brand-divider{
+    width: 1px; height: 22px; background: var(--line);
+  }
+  .brand-title{ display: flex; flex-direction: column; line-height: 1.2;}
+  .brand-title small{ font-size: 11px; color: var(--ink-3); font-weight: 600; letter-spacing: .04em;}
+  @media (max-width: 600px){ .brand-divider, .brand-title{ display: none;} }
+  .nav-links{ display:flex; gap: 22px; align-items:center;}
+  .nav-links a{ color: var(--ink-2); font-size: 14px; font-weight: 600;}
+  .nav-links a:hover{ color: var(--teal-deep); text-decoration: none;}
+  .btn{
+    display:inline-flex; align-items:center; gap: 8px;
+    background: var(--teal); color: #fff !important; font-weight: 700;
+    padding: 10px 18px; border-radius: 999px; border: none; cursor: pointer;
+    transition: transform .15s ease, box-shadow .2s ease, background .2s ease;
+    box-shadow: 0 6px 18px rgba(0,209,180,.35);
+    font-size: 14px;
+  }
+  .btn:hover{ background: var(--teal-deep); transform: translateY(-1px); text-decoration: none;}
+  .btn-lg{ padding: 16px 28px; font-size: 16px;}
+  .btn-ghost{
+    background: transparent; color: var(--teal-deep) !important;
+    border: 1.5px solid var(--teal-deep);
+    box-shadow: none;
+  }
+  .btn-ghost:hover{ background: rgba(5,173,162,.08);}
+
+  @media (max-width: 800px){
+    .nav-links a:not(.btn){ display: none;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position: relative; padding: 120px 0 100px; overflow: hidden;
+    color: #fff;
+    background:
+      linear-gradient(180deg, rgba(2,30,46,.55) 0%, rgba(2,30,46,.78) 100%),
+      url('assets/hero-bg.jpg') center/cover no-repeat;
+  }
+  .hero::before{
+    content:""; position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(900px 500px at 80% 0%, rgba(0,209,180,.28), transparent 60%);
+  }
+  .hero-grid{ display:grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; position: relative; z-index: 2;}
+  .hero-tag{
+    display:inline-block; padding: 6px 14px; border-radius: 999px;
+    background: rgba(255,255,255,.15); color: #66E4D2; font-weight: 700; font-size: 13px;
+    letter-spacing: .04em; backdrop-filter: blur(8px);
+    border: 1px solid rgba(102,228,210,.35);
+  }
+  .hero h1{
+    font-size: clamp(36px, 5vw, 60px); font-weight: 900; line-height: 1.15;
+    margin: 18px 0 20px; color: #fff;
+    text-shadow: 0 2px 20px rgba(0,0,0,.3);
+  }
+  .hero h1 span{ color: #66E4D2;}
+  .hero-sub{
+    font-size: 18px; color: rgba(255,255,255,.88); margin-bottom: 28px;
+    text-shadow: 0 1px 8px rgba(0,0,0,.3);
+  }
+  .hero-keywords{
+    display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px;
+  }
+  .chip{
+    background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); color: #fff;
+    padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 600;
+    backdrop-filter: blur(8px);
+  }
+  /* Light-themed chip (used inside light sections) */
+  section .chip{
+    background: #fff; border-color: var(--line); color: var(--ink-2);
+    backdrop-filter: none;
+  }
+  .hero-cta{ display:flex; gap: 12px; flex-wrap: wrap;}
+  .hero-cta .btn-ghost{
+    color: #fff !important; border-color: rgba(255,255,255,.5);
+    background: rgba(255,255,255,.05); backdrop-filter: blur(8px);
+  }
+  .hero-cta .btn-ghost:hover{ background: rgba(255,255,255,.15); border-color: #fff;}
+  .hero-visual{
+    position: relative;
+    display: flex; justify-content: center; align-items: flex-end;
+    min-height: 460px;
+  }
+  .hero-visual img{
+    max-height: 540px; width: auto;
+    filter: drop-shadow(0 30px 50px rgba(0,0,0,.5));
+    animation: floatY 5s ease-in-out infinite;
+  }
+  @keyframes floatY {
+    0%,100%{ transform: translateY(0);}
+    50%{ transform: translateY(-12px);}
+  }
+  .hero-visual-quote{
+    position: absolute; left: 0; right: 0; bottom: -10px;
+    text-align: center;
+    color: rgba(255,255,255,.85); font-size: 14px; line-height: 1.6;
+    font-weight: 500; letter-spacing: .04em;
+  }
+  @media (max-width: 880px){
+    .hero-grid{ grid-template-columns: 1fr; gap: 20px;}
+    .hero-visual{ min-height: 360px; order: -1;}
+    .hero-visual img{ max-height: 360px;}
+  }
+
+  /* ---------- Stats Strip ---------- */
+  .stats{
+    background: linear-gradient(180deg, #ffffff 0%, var(--bg-soft) 100%);
+  }
+  .stats-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px;}
+  .stat-card{
+    background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 32px 28px; box-shadow: var(--shadow);
+    position: relative; overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .stat-card:hover{ transform: translateY(-4px); box-shadow: var(--shadow-lg);}
+  .stat-card::before{
+    content:""; position:absolute; left:0; top:0; bottom:0; width:4px;
+    background: linear-gradient(180deg, var(--teal), var(--teal-deep));
+  }
+  .stat-num{
+    font-size: clamp(40px, 5vw, 60px); font-weight: 900; color: var(--teal-deep);
+    line-height: 1; letter-spacing: -.02em;
+  }
+  .stat-num small{ font-size: .45em; color: var(--ink); margin-left: 4px; font-weight: 700;}
+  .stat-label{ color: var(--ink-2); font-weight: 600; margin-top: 10px;}
+  .stat-meta{ color: var(--ink-3); font-size: 13px; margin-top: 6px;}
+  @media (max-width: 700px){ .stats-grid{ grid-template-columns: 1fr;} }
+
+  /* ---------- WHO Quote ---------- */
+  .who{
+    background: linear-gradient(135deg, #024A6B 0%, #013751 100%);
+    color: #fff;
+  }
+  .who-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;}
+  .who h2{ color:#fff;}
+  .who p{ color: rgba(255,255,255,.82);}
+  .who .eyebrow{ color: #66E4D2;}
+  .who .eyebrow::before{ background: #66E4D2;}
+  .who-quote{
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: var(--radius);
+    padding: 28px;
+  }
+  .who-quote-item{ padding: 14px 0; border-top: 1px solid rgba(255,255,255,.1);}
+  .who-quote-item:first-child{ border-top: none; padding-top: 0;}
+  .who-quote-item:last-child{ padding-bottom: 0;}
+  .who-quote-name{ color: #66E4D2; font-weight: 700; font-size: 14px; margin-bottom: 6px;}
+  .who-quote-text{ color: #fff; font-weight: 500;}
+  @media (max-width: 800px){ .who-grid{ grid-template-columns: 1fr;} }
+
+  /* ---------- Three Pillars ---------- */
+  .pillars-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px;}
+  .pillar{
+    background:#fff; border:1px solid var(--line); border-radius: var(--radius);
+    padding: 36px 28px 32px; text-align:center;
+    box-shadow: var(--shadow);
+    transition: transform .25s ease;
+  }
+  .pillar:hover{ transform: translateY(-4px);}
+  .pillar-icon{
+    width: 64px; height: 64px; border-radius: 50%;
+    background: linear-gradient(135deg, #024A6B, #05ADA2);
+    display:flex; align-items:center; justify-content:center; margin: 0 auto 18px;
+    color: #fff;
+  }
+  .pillar h3{ font-size: 22px; margin-bottom: 8px;}
+  .pillar-divider{ width:40px; height:2px; background: var(--line); margin: 12px auto 16px;}
+  .pillar p{ color: var(--ink-2); margin: 0;}
+  @media (max-width: 800px){ .pillars-grid{ grid-template-columns: 1fr;} }
+
+  /* ---------- Instructor 小飛 ---------- */
+  .instructor{
+    background: linear-gradient(135deg, #f1fbfa 0%, #e2f4f1 100%);
+  }
+  .instructor-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items:center;}
+  .instructor-card{
+    background:#fff; border-radius: 24px; padding: 36px;
+    box-shadow: var(--shadow-lg); border: 1px solid var(--line);
+  }
+  .badge{
+    display:inline-flex; gap:8px; align-items:center;
+    background: rgba(5,173,162,.10); color: var(--teal-deep);
+    padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 700;
+    border: 1px solid rgba(5,173,162,.18);
+  }
+  .instructor h2{ font-size: clamp(32px, 4vw, 48px);}
+  .instructor h2 strong{ color: var(--teal-deep);}
+  .mini-stats{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 24px;}
+  .mini-stat{
+    background: var(--bg-soft); border-radius: 12px; padding: 18px;
+  }
+  .mini-stat-num{ font-size: 28px; font-weight: 900; color: var(--teal-deep); line-height: 1;}
+  .mini-stat-num small{ font-size: 14px; color: var(--ink); margin-left: 4px; font-weight: 600;}
+  .mini-stat-label{ font-size: 13px; color: var(--ink-3); margin-top: 6px;}
+  @media (max-width: 800px){ .instructor-grid{ grid-template-columns: 1fr;} }
+
+  /* ---------- Team ---------- */
+  .team-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 20px;}
+  .member{
+    background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+    overflow: hidden; box-shadow: var(--shadow);
+    transition: transform .25s ease;
+  }
+  .member:hover{ transform: translateY(-4px);}
+  .member-avatar{
+    aspect-ratio: 4/5;
+    background: linear-gradient(135deg, #024A6B, #05ADA2);
+    position: relative;
+    display:flex; align-items:flex-end; justify-content:center;
+    padding: 22px 18px;
+    overflow: hidden;
+  }
+  .member-avatar img{
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; z-index: 1;
+  }
+  .member-avatar::after{
+    content:""; position: absolute; inset: 0; z-index: 2;
+    background: linear-gradient(180deg, transparent 35%, rgba(2,74,107,.22) 55%, rgba(2,74,107,.95) 100%);
+  }
+  .member-avatar-content{ text-align:center; position: relative; z-index: 3;}
+  .member-avatar-name{ color:#fff; font-weight: 800; font-size: 22px; text-shadow: 0 2px 12px rgba(0,0,0,.4);}
+  .member-avatar-role{ color: #66E4D2; font-size: 13px; margin-top: 4px; font-weight: 600;}
+  .member-body{ padding: 18px 18px 22px;}
+  .member-body ul{ margin: 0; padding-left: 18px; color: var(--ink-2); font-size: 14px;}
+  .member-body li{ margin: 4px 0;}
+  @media (max-width: 900px){ .team-grid{ grid-template-columns: repeat(2, 1fr);}}
+  @media (max-width: 520px){ .team-grid{ grid-template-columns: 1fr;}}
+
+  /* ---------- Audience ---------- */
+  .audience-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px;}
+  .aud{
+    background:#fff; border:1px solid var(--line); border-radius: var(--radius);
+    padding: 32px 28px; box-shadow: var(--shadow); position: relative;
+  }
+  .aud-num{
+    font-family: "Inter", sans-serif;
+    font-size: 64px; font-style: italic; font-weight: 800;
+    color: var(--teal); line-height: 1; margin-bottom: 8px;
+  }
+  .aud h3{ margin-bottom: 12px;}
+  .aud p{ color: var(--ink-2); margin: 0;}
+  @media (max-width: 800px){ .audience-grid{ grid-template-columns: 1fr;}}
+
+  /* ---------- Distribution map ---------- */
+  .dist-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px;}
+  .dist{
+    background: #fff; border-radius: var(--radius); border: 1px solid var(--line);
+    padding: 28px; box-shadow: var(--shadow);
+  }
+  .dist h3{ color: var(--teal-deep); display:flex; align-items:center; gap: 8px; font-size: 20px;}
+  .dist h3::before{ content:"▶"; font-size: 12px;}
+  .dist ul{ list-style:none; padding:0; margin: 18px 0 0;}
+  .dist li{ padding: 10px 0; border-top: 1px solid var(--line); font-weight: 600; color: var(--ink-2);}
+  .dist li:first-child{ border-top: none;}
+  .dist li small{ display: block; color: var(--ink-3); font-weight: 500; font-size: 13px; margin-top: 2px;}
+  .dist-tag{
+    display:inline-block; margin-top: 18px;
+    background: linear-gradient(180deg, var(--teal), var(--teal-deep));
+    color:#fff; padding: 10px 16px; border-radius: 10px; font-weight: 800;
+    width: 100%; text-align: center;
+  }
+  @media (max-width: 800px){ .dist-grid{ grid-template-columns: 1fr;}}
+
+  /* ---------- Sponsor benefits ---------- */
+  .benefits{
+    background: linear-gradient(135deg, #024A6B 0%, #013348 100%);
+    color: #fff;
+    position: relative; overflow: hidden;
+  }
+  .benefits::before{
+    content:""; position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(700px 380px at 90% 0%, rgba(0,209,180,.20), transparent 65%);
+  }
+  .benefits .container{ position: relative; z-index: 2;}
+  .benefits-mascot{
+    position: absolute; right: -30px; bottom: -40px; width: 240px;
+    opacity: .85; pointer-events: none; z-index: 1;
+    filter: drop-shadow(0 12px 24px rgba(0,0,0,.25));
+  }
+  @media (max-width: 800px){ .benefits-mascot{ width: 160px; right: -20px; bottom: -30px; opacity: .55;} }
+  .benefits h2, .benefits h3{ color:#fff;}
+  .benefits .eyebrow{ color: #66E4D2;}
+  .benefits .eyebrow::before{ background:#66E4D2;}
+  .benefits p{ color: rgba(255,255,255,.85);}
+  .benefit-stats{ display:grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 36px 0;}
+  .benefit-stat{
+    background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12);
+    border-radius: var(--radius); padding: 28px; text-align:center;
+  }
+  .benefit-stat-num{
+    font-size: clamp(48px, 6vw, 72px); font-weight: 900; color: #66E4D2;
+    line-height: 1; letter-spacing: -.02em;
+  }
+  .benefit-stat-num small{ font-size: .35em; color:#fff; font-weight: 700; margin-left: 4px;}
+  .benefit-stat-label{ color: rgba(255,255,255,.85); font-weight: 600; margin-top: 8px;}
+  .benefit-pillars{ display:grid; grid-template-columns: 1fr 1fr; gap: 24px;}
+  .benefit-pillar{
+    background: rgba(255,255,255,.05); border-left: 3px solid #66E4D2;
+    padding: 20px 24px; border-radius: 8px;
+  }
+  .benefit-pillar h3{ color: #66E4D2; font-size: 18px; margin-bottom: 8px;}
+  @media (max-width: 800px){ .benefit-stats, .benefit-pillars{ grid-template-columns: 1fr;}}
+
+  /* ---------- Sponsor Plans (interactive tabs) ---------- */
+  .plans-tabs{
+    display:flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;
+  }
+  .plan-tab{
+    background: var(--bg-soft); border: 1px solid var(--line);
+    padding: 14px 22px; border-radius: 999px; font-weight: 700; cursor: pointer;
+    color: var(--ink-2); font-size: 15px; transition: all .2s ease;
+  }
+  .plan-tab[aria-selected="true"]{
+    background: var(--teal-deep); color: #fff; border-color: var(--teal-deep);
+    box-shadow: 0 8px 20px rgba(5,173,162,.32);
+  }
+  .plan-tab small{ font-weight: 500; opacity: .8; margin-left: 6px;}
+  .plan-grid{
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+  }
+  .plan-card{
+    background: #fff; border: 2px solid var(--line); border-radius: 20px;
+    padding: 32px; position: relative; transition: all .25s ease;
+  }
+  .plan-card.compare{ display: block;}
+  .plan-card[data-active="true"]{
+    border-color: var(--teal); box-shadow: 0 14px 40px rgba(0,209,180,.18);
+  }
+  .plan-tier{
+    display:inline-flex; align-items:center; justify-content:center;
+    width: 44px; height: 44px; border-radius: 12px;
+    color: #fff; font-weight: 900; font-size: 20px;
+    background: var(--gold);
+    box-shadow: 0 6px 14px rgba(234,170,43,.32);
+  }
+  .plan-card.b .plan-tier{ background: var(--teal-deep); box-shadow: 0 6px 14px rgba(5,173,162,.32);}
+  .plan-form{ font-size: 15px; color: var(--ink-3); margin-top: 14px; font-weight: 600;}
+  .plan-name{ font-size: 28px; font-weight: 900; margin: 6px 0 4px;}
+  .plan-price{
+    margin: 18px 0;
+    display:flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  }
+  .plan-price-num{ font-size: 44px; font-weight: 900; color: var(--teal-deep); line-height: 1;}
+  .plan-price-num small{ font-size: 18px; color: var(--ink); font-weight: 700; margin-left: 4px;}
+  .plan-market{
+    background: rgba(5,173,162,.10); color: var(--teal-deep);
+    padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 700;
+  }
+  .plan-section{
+    border-top: 1px solid var(--line); padding-top: 16px; margin-top: 18px;
+  }
+  .plan-section-title{ font-weight: 800; color: var(--ink); margin-bottom: 10px; font-size: 14px; letter-spacing: .04em;}
+  .plan-features{ list-style:none; padding:0; margin: 0;}
+  .plan-features li{
+    padding: 7px 0; padding-left: 26px; position: relative; color: var(--ink-2);
+    font-size: 14.5px;
+  }
+  .plan-features li::before{
+    content:""; position:absolute; left:0; top:14px;
+    width: 16px; height: 16px; border-radius: 50%;
+    background: var(--teal);
+    background-image: linear-gradient(135deg, var(--teal), var(--teal-deep));
+  }
+  .plan-features li::after{
+    content:""; position:absolute; left:5px; top:18px;
+    width: 6px; height: 3px; border-left: 2px solid #fff; border-bottom: 2px solid #fff;
+    transform: rotate(-45deg);
+  }
+  @media (max-width: 800px){ .plan-grid{ grid-template-columns: 1fr;}}
+
+  /* ---------- Budget ---------- */
+  .budget-grid{ display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items:center;}
+  .pie{ position: relative; width: 320px; height: 320px; margin: 0 auto;}
+  .pie svg{ width:100%; height:100%; transform: rotate(-90deg);}
+  .pie-center{
+    position:absolute; inset: 0; display:flex; align-items:center; justify-content:center;
+    flex-direction:column; pointer-events:none;
+  }
+  .pie-center-num{ font-size: 36px; font-weight: 900; color: var(--ink);}
+  .pie-center-label{ font-size: 13px; color: var(--ink-3);}
+  .legend{ display: grid; grid-template-columns: 1fr; gap: 8px;}
+  .legend-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding: 10px 14px; border-radius: 8px; background: var(--bg-soft);
+  }
+  .legend-l{ display:flex; align-items:center; gap: 10px; font-weight: 600; color: var(--ink);}
+  .legend-dot{ width: 12px; height:12px; border-radius: 3px;}
+  .legend-r{ font-weight: 700; color: var(--ink-2);}
+  @media (max-width: 800px){ .budget-grid{ grid-template-columns: 1fr;}}
+
+  /* ---------- Timeline ---------- */
+  .timeline{
+    background: var(--bg-soft);
+  }
+  .timeline-grid{
+    display: grid;
+    grid-template-columns: 100px repeat(7, 1fr);
+    gap: 6px;
+    background: #fff; padding: 24px; border-radius: var(--radius); border:1px solid var(--line);
+  }
+  .tl-head{
+    color: var(--ink-3); font-size: 13px; text-align: center; font-weight: 700;
+    padding: 6px 0;
+  }
+  .tl-row-label{
+    background: var(--bg-soft); border-radius: 6px;
+    display:flex; align-items:center; padding: 0 14px;
+    font-weight: 700; color: var(--ink); font-size: 14px;
+    height: 36px;
+  }
+  .tl-cell{
+    height: 36px; background: var(--bg-soft); border-radius: 6px; position:relative;
+  }
+  .tl-bar{
+    position:absolute; top: 6px; bottom: 6px;
+    background: linear-gradient(90deg, var(--teal), var(--teal-deep));
+    border-radius: 4px; box-shadow: 0 4px 12px rgba(0,209,180,.30);
+  }
+  @media (max-width: 700px){
+    .timeline-grid{ font-size: 11px;}
+  }
+
+  /* ---------- Outline accordion ---------- */
+  .outline-meta{
+    display:flex; flex-wrap:wrap; gap: 10px; margin-bottom: 28px;
+  }
+  .outline-meta .chip{
+    background: rgba(5,173,162,.10); color: var(--teal-deep); border-color: transparent;
+  }
+  .outline{ display: grid; gap: 10px;}
+  .o-item{
+    border: 1px solid var(--line); border-radius: 12px; background: #fff;
+    overflow: hidden; transition: box-shadow .2s ease;
+  }
+  .o-item[open]{ box-shadow: var(--shadow);}
+  .o-item summary{
+    display:flex; align-items:center; gap: 12px;
+    padding: 16px 20px; cursor: pointer; list-style: none;
+    font-weight: 700; color: var(--ink); user-select: none;
+  }
+  .o-item summary::-webkit-details-marker{ display:none;}
+  .o-item summary .o-num{
+    background: var(--teal); color: #fff; width: 28px; height: 28px;
+    border-radius: 50%; display: inline-flex; align-items:center; justify-content:center;
+    font-size: 13px; font-weight: 800;
+  }
+  .o-item summary .o-arrow{
+    margin-left: auto; transition: transform .2s ease; color: var(--ink-3);
+  }
+  .o-item[open] .o-arrow{ transform: rotate(180deg);}
+  .o-body{ padding: 4px 20px 18px 60px;}
+  .o-body ul{ list-style:none; padding: 0; margin: 0;}
+  .o-body li{
+    color: var(--ink-2); padding: 6px 0; display:flex; align-items:flex-start; gap: 10px;
+    font-size: 15px;
+  }
+  .o-body li::before{ content:"▸"; color: var(--teal); flex-shrink: 0;}
+  .o-tag{
+    background: var(--teal); color:#fff; padding: 2px 8px; border-radius: 4px;
+    font-size: 11px; font-weight: 700; margin-left: 8px;
+  }
+
+  /* ---------- Video ---------- */
+  .video-card{
+    background: linear-gradient(135deg, #024A6B, #05ADA2 60%, #00D1B4);
+    border-radius: 24px; padding: 56px 32px; text-align: center; color: #fff;
+    box-shadow: var(--shadow-lg);
+  }
+  .video-play{
+    width: 88px; height: 88px; border-radius: 50%; margin: 0 auto 20px;
+    background: rgba(255,255,255,.18); border: 2px solid rgba(255,255,255,.4);
+    display:flex; align-items:center; justify-content:center;
+    transition: transform .2s ease;
+  }
+  .video-play:hover{ transform: scale(1.05);}
+  .video-card h3{ color:#fff;}
+  .video-card p{ color: rgba(255,255,255,.85); max-width: 520px; margin: 12px auto 0;}
+
+  /* ---------- Final CTA ---------- */
+  .final{
+    position: relative; padding: 120px 0 100px; overflow: hidden;
+    background:
+      radial-gradient(800px 400px at 50% 100%, rgba(0,209,180,.18), transparent 60%),
+      linear-gradient(180deg, #ffffff 0%, #f1fbfa 100%);
+    text-align: center;
+  }
+  .final-mascot{
+    width: 160px; margin: 0 auto 18px; display: block;
+    animation: floatY 4s ease-in-out infinite;
+  }
+  .final-quote{
+    font-size: clamp(26px, 3.4vw, 38px); font-weight: 900; line-height: 1.4;
+    color: var(--ink); max-width: 880px; margin: 0 auto 28px;
+  }
+  .final-quote span{ color: var(--teal-deep);}
+  .final-sub{
+    color: var(--ink-2); max-width: 700px; margin: 0 auto 40px;
+    font-size: 17px;
+  }
+  .final-actions{
+    display:flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+  }
+  .final-meta{
+    margin-top: 60px; padding-top: 30px; border-top: 1px solid var(--line);
+    display:flex; gap: 36px; justify-content: center; flex-wrap: wrap; color: var(--ink-3);
+    font-size: 14px;
+  }
+  .final-meta strong{ color: var(--ink); font-weight: 800; display: block; margin-bottom: 2px; font-size: 16px;}
+
+  /* ---------- Footer ---------- */
+  footer{
+    background: #022537; color: rgba(255,255,255,.7); padding: 40px 0 32px; font-size: 13px;
+  }
+  .foot-inner{
+    display:flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center;
+  }
+  .foot-brand{ display:flex; align-items:center; gap: 14px;}
+  .foot-brand img{ height: 30px; width: auto;}
+  .foot-brand-divider{ width: 1px; height: 22px; background: rgba(255,255,255,.18);}
+  footer a{ color: #66E4D2;}
+
+  /* ---------- Reveal animation ---------- */
+  .reveal{
+    opacity: 0; transform: translateY(20px);
+    transition: opacity .7s ease, transform .7s ease;
+  }
+  .reveal.in{ opacity: 1; transform: none;}
+
+  /* ---------- Scroll progress ---------- */
+  .scroll-bar{
+    position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+    background: linear-gradient(90deg, var(--teal), var(--teal-deep));
+    z-index: 100; transition: width .1s linear;
+  }
+
+  ::selection{ background: var(--teal); color: #fff;}
+
+  /* ---------- Mascot accents (Hahow 小蛙) ---------- */
+  .mascot{ position: absolute; pointer-events: none; user-select: none;}
+  .mascot-hero{
+    position: absolute; left: -10px; bottom: 24px; width: 110px;
+    z-index: 3;
+    animation: floatY 5.4s ease-in-out infinite;
+    filter: drop-shadow(0 6px 12px rgba(0,0,0,.25));
+  }
+  .pillar .mascot-pillar{
+    position: relative; width: 84px; height: 84px;
+    margin: -6px auto 8px;
+  }
+  .pillar .mascot-pillar img{ width: 100%; height: 100%; object-fit: contain;}
+  .aud-mascot-wrap{
+    position: absolute; right: 18px; top: 18px; width: 72px; height: 72px;
+    opacity: .9;
+  }
+  .aud-mascot-wrap img{ width: 100%; height: 100%; object-fit: contain;}
+  .dist-mascot-wrap{
+    position: absolute; right: 16px; top: 14px; width: 64px; height: 64px;
+    opacity: .85;
+  }
+  .dist-mascot-wrap img{ width: 100%; height: 100%; object-fit: contain;}
+  .plan-card .plan-mascot{
+    position: absolute; right: 18px; top: 18px; width: 88px; opacity: .9;
+  }
+
+  /* Brand graphic — door shape inspired tilt rule */
+  .brand-rule{
+    width: 64px; height: 4px; border-radius: 2px;
+    background: linear-gradient(90deg, var(--teal), var(--teal-deep));
+    margin-bottom: 18px;
+  }
+</style>
+</head>
+<body>
+
+<div class="scroll-bar" id="scrollBar"></div>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <img class="brand-logo" src="assets/hahow-logo.png" alt="Hahow 好學校" />
+      <span class="brand-divider"></span>
+      <span class="brand-title">
+        <span>Ｘ小飛 公益贊助案</span>
+        <small>戶外戲水指南課程</small>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="#problem">為何重要</a>
+      <a href="#course">課程亮點</a>
+      <a href="#team">講師陣容</a>
+      <a href="#plans">贊助方案</a>
+      <a href="#contact" class="btn">立即聯繫</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" id="top">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="reveal in">
+        <span class="hero-tag">全民通識課｜公益課程贊助案</span>
+        <h1>第一堂<span>戶外戲水指南</span><br/>讓每一次出發，<br/>都可以平安回家。</h1>
+        <p class="hero-sub">由 Hahow 與全網 58 萬粉絲探險家「小飛」聯手推出，台灣首部走入溪流、瀑布、海岸實景的戶外救命課，邀請企業夥伴共同守護每一位走進大自然的台灣人。</p>
+        <div class="hero-keywords">
+          <span class="chip">守護生命</span>
+          <span class="chip">社會責任</span>
+          <span class="chip">全民教育</span>
+          <span class="chip">實景外拍</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#plans" class="btn btn-lg">查看贊助方案</a>
+          <a href="#contact" class="btn btn-lg btn-ghost">聯繫專案窗口</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal in">
+        <img src="assets/xiaofei-cutout.png" alt="總策劃 小飛｜中華民國激流泛舟協會負責人" />
+        <div class="hero-visual-quote">總策劃｜小飛．中華民國激流泛舟協會負責人</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Problem / Stats -->
+<section class="stats" id="problem">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">每一次的意外，都是一個家庭的破碎</span>
+      <h2>探險 vs. 冒險｜更重視風險，就有機會拯救更多民眾</h2>
+      <p class="lead" style="max-width: 760px;">戶外運動已連續多年成為國人最常從事的運動項目，疫情之後，越來越多民眾走入溪谷、海岸與山林，享受大自然。然而，台灣每年仍持續發生數百件溺水事故。</p>
+    </div>
+    <div class="stats-grid" style="margin-top: 36px;">
+      <div class="stat-card reveal">
+        <div class="stat-num" data-count="400" data-suffix="人">0<small>人</small></div>
+        <div class="stat-label">每年意外溺水的事故人數</div>
+        <div class="stat-meta">時間：2020–2024</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-num" data-count="50" data-suffix="%">0<small>%</small></div>
+        <div class="stat-label">溺水事故的死亡機率</div>
+        <div class="stat-meta">每兩位即有一位不幸罹難</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-num" data-count="80" data-suffix="%">0<small>%</small></div>
+        <div class="stat-label">台灣人熱愛大自然</div>
+        <div class="stat-meta">戶外運動參與率近八成</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="who">
+  <div class="container">
+    <div class="who-grid">
+      <div class="reveal">
+        <span class="eyebrow">▶ WHO 警告</span>
+        <h2>溺水死亡，集中在中壯年男性<br/>省思：風險意識課程的必要性！</h2>
+        <p>世界衛生組織（WHO）將溺水視為迫切可預防的公共衛生問題之一。依衛生福利部 2014–2018 統計，男性死亡人數於 50–59 歲區間達到最高峰，平均每年 30 人，成為公益教育的關鍵痛點。</p>
+      </div>
+      <div class="who-quote reveal">
+        <div class="who-quote-item">
+          <div class="who-quote-name">高雄科技大學副教授 丁國桓</div>
+          <div class="who-quote-text">「許多民眾尚未具備完整的水域安全觀念就下水，意外落水時也沒有足夠的自救能力。」</div>
+        </div>
+        <div class="who-quote-item">
+          <div class="who-quote-name">中華民國水中運動協會榮譽理事長 曾應鉅</div>
+          <div class="who-quote-text">「溺水是可能會發生在每一個人身上的事。」</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Three Pillars -->
+<section id="course">
+  <div class="container">
+    <div class="reveal" style="max-width: 760px;">
+      <span class="eyebrow">為何我們想要開這堂課</span>
+      <h2>全台唯一「戲水指南」的戶外安全課</h2>
+      <p class="lead">享受大自然，與大自然共存。持續走入山林、溪谷，加強風險意識、降低傷害。讓每一次出發，都能安全回家。</p>
+    </div>
+    <div class="pillars-grid" style="margin-top: 40px;">
+      <div class="pillar reveal">
+        <div class="mascot-pillar"><img src="assets/frog-walk.png" alt=""></div>
+        <div class="pillar-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21l3-7 4 5 5-9 6 11"/><circle cx="18" cy="5" r="2"/></svg>
+        </div>
+        <h3>戶外實拍</h3>
+        <div class="pillar-divider"></div>
+        <p>鏡頭直接帶領學員走進溪流、瀑布與海邊，呈現第一線的真實情境。</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="mascot-pillar"><img src="assets/frog-think.png" alt=""></div>
+        <div class="pillar-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+        </div>
+        <h3>看見地形風險</h3>
+        <div class="pillar-divider"></div>
+        <p>真實呈現翻滾流、水下地形等地形風險，讓學員用畫面感受真實情境。</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="mascot-pillar"><img src="assets/frog-yay.png" alt=""></div>
+        <div class="pillar-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="3" r="1.5"/><circle cx="12" cy="21" r="1.5"/><circle cx="3" cy="12" r="1.5"/><circle cx="21" cy="12" r="1.5"/><line x1="12" y1="4.5" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="19.5"/><line x1="4.5" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="19.5" y2="12"/></svg>
+        </div>
+        <h3>系統化知識</h3>
+        <div class="pillar-divider"></div>
+        <p>將艱深的風險管理知識，轉化為大眾能理解、快速學習的實用語言。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Instructor 小飛 -->
+<section class="instructor">
+  <div class="container">
+    <div class="instructor-grid">
+      <div class="reveal">
+        <span class="badge">總策劃｜中華民國激流泛舟協會負責人</span>
+        <h2>比台灣人更懂台灣的探險家 — <strong>小飛</strong></h2>
+        <p class="lead">12 年深耕戶外領域，親身探勘 3000+ 條野溪與瀑布，建立全台最大戶外資料庫。自製地圖累積瀏覽 1 億次，全網 58 萬粉絲跟隨。</p>
+        <div class="mini-stats">
+          <div class="mini-stat">
+            <div class="mini-stat-num" data-count="12" data-suffix=""><span>0</span><small>Years</small></div>
+            <div class="mini-stat-label">建立全台最大戶外資料庫</div>
+          </div>
+          <div class="mini-stat">
+            <div class="mini-stat-num" data-count="3000" data-suffix="+"><span>0</span><small>+</small></div>
+            <div class="mini-stat-label">親身探勘野溪與瀑布</div>
+          </div>
+          <div class="mini-stat">
+            <div class="mini-stat-num" data-count="1" data-suffix=""><span>0</span><small>億次</small></div>
+            <div class="mini-stat-label">自製地圖瀏覽次數</div>
+          </div>
+          <div class="mini-stat">
+            <div class="mini-stat-num" data-count="58" data-suffix=""><span>0</span><small>萬</small></div>
+            <div class="mini-stat-label">全網粉絲（FB / IG / YT）</div>
+          </div>
+        </div>
+      </div>
+      <div class="instructor-card reveal">
+        <h3 style="margin-bottom: 18px;">守護三大族群｜提高戶外風險意識、降低傷害</h3>
+        <div style="display: grid; gap: 14px;">
+          <div style="display:flex; gap: 16px; padding: 16px; background: var(--bg-soft); border-radius: 12px;">
+            <div style="font-family: Inter; font-style: italic; font-weight: 800; color: var(--teal); font-size: 36px; line-height: 1;">1</div>
+            <div>
+              <strong style="color: var(--teal-deep);">親子家庭</strong>
+              <p style="margin: 4px 0 0; font-size: 14px;">重視孩子活動安全、經常從事露營、親水活動的家長。</p>
+            </div>
+          </div>
+          <div style="display:flex; gap: 16px; padding: 16px; background: var(--bg-soft); border-radius: 12px;">
+            <div style="font-family: Inter; font-style: italic; font-weight: 800; color: var(--teal); font-size: 36px; line-height: 1;">2</div>
+            <div>
+              <strong style="color: var(--teal-deep);">戶外遊客 / 自由玩家</strong>
+              <p style="margin: 4px 0 0; font-size: 14px;">喜好登山、戶外活動的專業玩家，讓高頻率前往戶外時更安全。</p>
+            </div>
+          </div>
+          <div style="display:flex; gap: 16px; padding: 16px; background: var(--bg-soft); border-radius: 12px;">
+            <div style="font-family: Inter; font-style: italic; font-weight: 800; color: var(--teal); font-size: 36px; line-height: 1;">3</div>
+            <div>
+              <strong style="color: var(--teal-deep);">游泳運動族</strong>
+              <p style="margin: 4px 0 0; font-size: 14px;">全台 1 萬多所學校、約 400 萬學生（佔全台 17%），透過校園串連從學會游泳到判讀風險。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section id="team">
+  <div class="container">
+    <div class="reveal" style="max-width: 720px;">
+      <span class="eyebrow">黃金陣容｜跨界權威聯手</span>
+      <h2>由跨界專家組成的教學團隊</h2>
+      <p class="lead">集結地震研究、戶外教育、開放水域訓練與激流救援專業，共同為這堂課打造最完整的風險知識體系。</p>
+    </div>
+    <div class="team-grid" style="margin-top: 40px;">
+      <div class="member reveal">
+        <div class="member-avatar">
+          <img src="assets/jimmy.jpg" alt="Jimmy 校長" />
+          <div class="member-avatar-content">
+            <div class="member-avatar-name">Jimmy 校長</div>
+            <div class="member-avatar-role">岩質與地震專家</div>
+          </div>
+        </div>
+        <div class="member-body">
+          <ul>
+            <li>台灣東部地震研究中心助理研究員</li>
+            <li>岩質解讀專家</li>
+            <li>環境教育推廣</li>
+          </ul>
+        </div>
+      </div>
+      <div class="member reveal">
+        <div class="member-avatar">
+          <img src="assets/tsai.jpg" alt="蔡賢｜後山禮人" />
+          <div class="member-avatar-content">
+            <div class="member-avatar-name">蔡賢</div>
+            <div class="member-avatar-role">後山禮人</div>
+          </div>
+        </div>
+        <div class="member-body">
+          <ul>
+            <li>後山禮人戶外工作室創辦人</li>
+            <li>體育署溯溪嚮導</li>
+            <li>偏遠地區學生戶外環境教育</li>
+            <li>大自然環境推廣</li>
+          </ul>
+        </div>
+      </div>
+      <div class="member reveal">
+        <div class="member-avatar">
+          <img src="assets/greta.jpg" alt="Greta｜鐵人教練" />
+          <div class="member-avatar-content">
+            <div class="member-avatar-name">Greta</div>
+            <div class="member-avatar-role">鐵人教練</div>
+          </div>
+        </div>
+        <div class="member-body">
+          <ul>
+            <li>三鐵選手及教練</li>
+            <li>開放水域游泳專家</li>
+            <li>航海船員 - 水手</li>
+            <li>高階自由潛水員</li>
+          </ul>
+        </div>
+      </div>
+      <div class="member reveal">
+        <div class="member-avatar">
+          <img src="assets/yachi.jpg" alt="雅祺教練｜激流救援" />
+          <div class="member-avatar-content">
+            <div class="member-avatar-name">雅祺教練</div>
+            <div class="member-avatar-role">激流救援</div>
+          </div>
+        </div>
+        <div class="member-body">
+          <ul>
+            <li>國際激流救援訓練助教</li>
+            <li>台灣激流背包艇教學與訓練教練</li>
+            <li>體育署溯溪嚮導</li>
+            <li>戶外風險教育及衛生護理</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Course Outline Accordion -->
+<section style="background: var(--bg-soft);">
+  <div class="container">
+    <div class="reveal" style="max-width: 760px;">
+      <span class="eyebrow">未公開，企業搶先看</span>
+      <h2>戶外戲水指南｜課程大綱</h2>
+      <p class="lead">課程預計產製 22 部單元，總時長 5 小時，分為 5 大章節，循序帶領大眾建立完整的戶外水域風險意識。</p>
+    </div>
+    <div class="outline-meta">
+      <span class="chip">22 部單元</span>
+      <span class="chip">5 小時內容</span>
+      <span class="chip">5 大章節</span>
+      <span class="chip">實景外拍</span>
+    </div>
+    <div class="outline">
+      <details class="o-item reveal" open>
+        <summary>
+          <span class="o-num">1</span>
+          <span>戶外活動基礎認識</span>
+          <svg class="o-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="o-body">
+          <ul>
+            <li>單元 1 — 課程介紹</li>
+            <li>單元 2 — 認識風險｜三個風險公式</li>
+            <li>單元 3 — 常見迷思｜破解傳統迷思及假新聞</li>
+            <li>單元 4 — 降低戶外風險，你的風險容忍度應該有多高？</li>
+            <li>單元 5 — 安全的概念，自我評估量表與練習</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="o-item reveal">
+        <summary>
+          <span class="o-num">2</span>
+          <span>水上活動的風險與樂趣<span class="o-tag">企業冠名置入</span></span>
+          <svg class="o-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="o-body">
+          <ul>
+            <li>單元 1 — 水上活動的種類，你適合這項運動嗎</li>
+            <li>單元 2 — 基本游泳技巧，游泳應該學會什麼</li>
+            <li>單元 3 — 天然開放水域游泳和泳池的差別</li>
+            <li>單元 4 — 瀑布的游泳環境介紹與常見風險說明</li>
+            <li>單元 5 — 河流的危險地形辨識</li>
+            <li>單元 6 — 地質的認識和安全橫跨溪流</li>
+            <li>單元 7 — 海洋與海邊的風險認知</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="o-item reveal">
+        <summary>
+          <span class="o-num">3</span>
+          <span>自救與救人</span>
+          <svg class="o-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="o-body">
+          <ul>
+            <li>單元 1 — 自救技巧與正確決策的評估</li>
+            <li>單元 2 — 救生衣的選擇與浮具的使用方式</li>
+            <li>單元 3 — 如何協助他人｜「伸、拋、划、游」原則</li>
+            <li>單元 4 — 緊急狀況應對｜在不危及自己安全的情況下救人</li>
+            <li>單元 5 — 帶孩子從事戶外活動的注意事項</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="o-item reveal">
+        <summary>
+          <span class="o-num">4</span>
+          <span>行前規劃</span>
+          <svg class="o-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="o-body">
+          <ul>
+            <li>單元 1 — 如何選擇時間地點｜地圖的使用方式</li>
+            <li>單元 2 — 天氣的預判｜我到底要不要出門</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="o-item reveal">
+        <summary>
+          <span class="o-num">5</span>
+          <span>戶外資源與進階探索</span>
+          <svg class="o-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="o-body">
+          <ul>
+            <li>單元 1 — 該如何選擇我的夥伴及教練</li>
+            <li>單元 2 — 進階路線與長天數探勘規劃</li>
+            <li>單元 3 — 加碼課程｜女孩生理期該怎麼辦？我還能玩水嗎？我是男生該怎麼幫忙</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Video -->
+<section>
+  <div class="container">
+    <div class="reveal" style="max-width: 720px; margin-bottom: 32px;">
+      <span class="eyebrow">戶外戲水指南課程｜宣傳影片</span>
+      <h2>看見小飛，看見台灣最真實的戶外現場</h2>
+    </div>
+    <div class="video-card reveal" id="videoCard" onclick="alert('影片連結即將更新，請洽窗口索取最新版預告。')">
+      <div class="video-play">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff"><polygon points="6 4 20 12 6 20"/></svg>
+      </div>
+      <h3 style="font-size: 24px;">點此觀看完整宣傳影片</h3>
+      <p>由小飛親自帶領，鏡頭直擊溪流、瀑布、海岸的真實風險，看見這堂課的不可取代性。</p>
+    </div>
+  </div>
+</section>
+
+<!-- Distribution Map -->
+<section style="background: var(--bg-soft);" id="distribution">
+  <div class="container">
+    <div class="reveal" style="max-width: 720px;">
+      <span class="eyebrow">宣傳地圖</span>
+      <h2>獨家通路 × 品牌信任 × 社群擴散</h2>
+      <p class="lead">透過 Hahow 集團獨家通路、媒體廣宣、KOL 三軸串連，至少帶來百萬以上的品牌曝光廣度。</p>
+    </div>
+    <div class="dist-grid" style="margin-top: 36px;">
+      <div class="dist reveal">
+        <h3>Hahow 集團通路</h3>
+        <ul>
+          <li>2C 平台置頂 + 社群曝光<small>百萬會員收看</small></li>
+          <li>2B 平台引入 + 企業推廣<small>千家以上企業收看</small></li>
+          <li>2G 校園平台引入<small>開放校園內公播申請</small></li>
+        </ul>
+        <span class="dist-tag">獨家通路</span>
+      </div>
+      <div class="dist reveal">
+        <h3>媒體廣宣</h3>
+        <ul>
+          <li>公益行動 Kick-off 記者會</li>
+          <li>邀請縣市政府合辦</li>
+          <li>商業媒體報導</li>
+        </ul>
+        <span class="dist-tag">品牌信任</span>
+      </div>
+      <div class="dist reveal">
+        <h3>KOL 小飛</h3>
+        <ul>
+          <li>小飛｜YouTube 影片宣傳</li>
+          <li>小飛｜社群曝光</li>
+          <li>全網 58 萬粉絲擴散</li>
+        </ul>
+        <span class="dist-tag">社群擴散</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sponsor benefits -->
+<section class="benefits">
+  <img class="benefits-mascot" src="assets/frog-yay.png" alt="" />
+  <div class="container">
+    <div class="reveal" style="max-width: 760px;">
+      <span class="eyebrow">公益免費課程｜贊助效益</span>
+      <h2>品牌信任長期曝光 與 ESG 貢獻</h2>
+    </div>
+    <div class="benefit-stats">
+      <div class="benefit-stat reveal">
+        <div class="benefit-stat-num" data-count="100" data-suffix="萬+">0<small>萬+</small></div>
+        <div class="benefit-stat-label">品牌曝光觸及人次</div>
+      </div>
+      <div class="benefit-stat reveal">
+        <div class="benefit-stat-num" data-count="2" data-suffix="萬+">0<small>萬+</small></div>
+        <div class="benefit-stat-label">預估課程學員人數</div>
+      </div>
+    </div>
+    <div class="benefit-pillars">
+      <div class="benefit-pillar reveal">
+        <h3>品牌信任價值</h3>
+        <p>集合 Hahow 百萬會員＋百家企業＋千所校園的免費公益課程，搭配多篇媒體露出、縣市政府合作、游泳機構合作與相關單位申請公播權，至少帶來超過 100 萬觸及的宣傳廣度。</p>
+        <p>課程銷售期長達 2–3 年，戶外風險課不會因時代而技術性改變，品牌透過口播稿、Logo 等長期在站上曝光、重複觀看，必定提升品牌信任度。</p>
+      </div>
+      <div class="benefit-pillar reveal">
+        <h3>SDGs / ESG 永續指標</h3>
+        <p>參與社會公益行動，落實 SDGs / ESG 指標。結案後提供課程參與人數、宣傳觸及人數與相關執行項目說明，對應企業年度永續報告書之項目：</p>
+        <p><strong style="color:#fff;">SDGs 項目：</strong>優質教育、健康福祉<br/>
+           <strong style="color:#fff;">ESG 項目：</strong>社會責任 - 員工福利 / 社會投資</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sponsor Plans -->
+<section id="plans">
+  <div class="container">
+    <div class="reveal" style="max-width: 760px;">
+      <span class="eyebrow">贊助方案規劃｜Partnership Models</span>
+      <h2>兩種贊助等級，靈活對應 ESG 預算</h2>
+      <p class="lead">點擊下方標籤切換比較聯合贊助與主要贊助方案的權益內容。</p>
+    </div>
+    <div class="plans-tabs" role="tablist" style="margin-top: 28px;">
+      <button class="plan-tab" role="tab" aria-selected="true" data-target="both">並列比較</button>
+      <button class="plan-tab" role="tab" aria-selected="false" data-target="a">A · 聯合贊助 <small>50 萬</small></button>
+      <button class="plan-tab" role="tab" aria-selected="false" data-target="b">B · 主要贊助 <small>150 萬</small></button>
+    </div>
+    <div class="plan-grid" id="planGrid">
+      <div class="plan-card a" data-plan="a" data-active="false">
+        <div style="display:flex; align-items:center; gap: 14px;">
+          <div class="plan-tier">A</div>
+          <div>
+            <div class="plan-form">聯合贊助</div>
+            <div class="plan-name">A 方案</div>
+          </div>
+        </div>
+        <div class="plan-price">
+          <div class="plan-price-num">50<small>萬</small></div>
+          <span class="plan-market">市價 100 萬</span>
+        </div>
+        <div class="plan-section">
+          <div class="plan-section-title">課程影片權益</div>
+          <ul class="plan-features">
+            <li>指定單元片頭口播介紹 × 2</li>
+            <li>指定單元 logo 畫面置入 × 2</li>
+            <li>片尾感謝名單</li>
+          </ul>
+        </div>
+        <div class="plan-section">
+          <div class="plan-section-title">提案頁權益</div>
+          <ul class="plan-features">
+            <li>LOGO 牆露出</li>
+            <li>企業介紹</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="plan-card b" data-plan="b" data-active="false">
+        <div style="display:flex; align-items:center; gap: 14px;">
+          <div class="plan-tier">B</div>
+          <div>
+            <div class="plan-form">主要贊助</div>
+            <div class="plan-name">B 方案</div>
+          </div>
+        </div>
+        <div class="plan-price">
+          <div class="plan-price-num">150<small>萬</small></div>
+          <span class="plan-market">市價 430 萬</span>
+        </div>
+        <div class="plan-section">
+          <div class="plan-section-title">課程影片權益</div>
+          <ul class="plan-features">
+            <li>指定單元片頭口播介紹 × 4</li>
+            <li>指定單元 logo 畫面置入 × 4</li>
+            <li>特定單元 Ch 2 永久冠名權</li>
+            <li>片尾感謝名單</li>
+          </ul>
+        </div>
+        <div class="plan-section">
+          <div class="plan-section-title">Hahow 平台權益</div>
+          <ul class="plan-features">
+            <li>EDM、LINE 發文一篇</li>
+            <li>FB、IG 發文一篇</li>
+            <li>官網 Banner 置入 15 天</li>
+            <li>媒體記者會活動 × 1</li>
+            <li>商業媒體報導一篇</li>
+          </ul>
+        </div>
+        <div class="plan-section">
+          <div class="plan-section-title">小飛 KOL 權益</div>
+          <ul class="plan-features">
+            <li>贊助商媒體活動出席乙次</li>
+            <li>YouTube 紀錄片置入乙次</li>
+            <li>YouTube 指定片商品置入乙次</li>
+            <li>專屬線下 VIP 活動演講乙場</li>
+          </ul>
+        </div>
+        <div class="plan-section">
+          <div class="plan-section-title">提案頁權益</div>
+          <ul class="plan-features">
+            <li>LOGO 牆露出</li>
+            <li>企業介紹</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Budget -->
+<section style="background: var(--bg-soft);">
+  <div class="container">
+    <div class="reveal" style="max-width: 720px;">
+      <span class="eyebrow">預算規劃｜總預算 450 萬</span>
+      <h2>透明的預算配置，讓贊助每一分都到位</h2>
+    </div>
+    <div class="budget-grid" style="margin-top: 36px;">
+      <div class="reveal">
+        <div class="pie">
+          <svg viewBox="0 0 42 42">
+            <!-- 課程影片製作費 33.3% -->
+            <circle r="15.91549430918954" cx="21" cy="21" fill="transparent"
+                    stroke="#024A6B" stroke-width="14"
+                    stroke-dasharray="33.3 66.7" stroke-dashoffset="0"/>
+            <!-- 行銷廣宣費用 25% -->
+            <circle r="15.91549430918954" cx="21" cy="21" fill="transparent"
+                    stroke="#05ADA2" stroke-width="14"
+                    stroke-dasharray="25 75" stroke-dashoffset="-33.3"/>
+            <!-- 講師贊助金 20% -->
+            <circle r="15.91549430918954" cx="21" cy="21" fill="transparent"
+                    stroke="#00D1B4" stroke-width="14"
+                    stroke-dasharray="20 80" stroke-dashoffset="-58.3"/>
+            <!-- 人事費用 13.3% -->
+            <circle r="15.91549430918954" cx="21" cy="21" fill="transparent"
+                    stroke="#66E4D2" stroke-width="14"
+                    stroke-dasharray="13.3 86.7" stroke-dashoffset="-78.3"/>
+            <!-- 專案管理費 6.1% -->
+            <circle r="15.91549430918954" cx="21" cy="21" fill="transparent"
+                    stroke="#EAAA2B" stroke-width="14"
+                    stroke-dasharray="6.1 93.9" stroke-dashoffset="-91.6"/>
+            <!-- 平台營運 2.2% -->
+            <circle r="15.91549430918954" cx="21" cy="21" fill="transparent"
+                    stroke="#F4C76C" stroke-width="14"
+                    stroke-dasharray="2.2 97.8" stroke-dashoffset="-97.7"/>
+          </svg>
+          <div class="pie-center">
+            <div class="pie-center-num">450<span style="font-size: 16px; margin-left: 4px;">萬</span></div>
+            <div class="pie-center-label">總預算</div>
+          </div>
+        </div>
+      </div>
+      <div class="legend reveal">
+        <div class="legend-row"><div class="legend-l"><span class="legend-dot" style="background:#024A6B"></span>課程影片製作費</div><div class="legend-r">33.3%</div></div>
+        <div class="legend-row"><div class="legend-l"><span class="legend-dot" style="background:#05ADA2"></span>行銷廣宣費用</div><div class="legend-r">25.0%</div></div>
+        <div class="legend-row"><div class="legend-l"><span class="legend-dot" style="background:#00D1B4"></span>講師贊助金</div><div class="legend-r">20.0%</div></div>
+        <div class="legend-row"><div class="legend-l"><span class="legend-dot" style="background:#66E4D2"></span>人事費用</div><div class="legend-r">13.3%</div></div>
+        <div class="legend-row"><div class="legend-l"><span class="legend-dot" style="background:#EAAA2B"></span>專案管理費</div><div class="legend-r">6.1%</div></div>
+        <div class="legend-row"><div class="legend-l"><span class="legend-dot" style="background:#F4C76C"></span>平台營運費用</div><div class="legend-r">2.2%</div></div>
+        <p style="margin-top: 16px; font-size: 14px; color: var(--ink-3);">含戶外實拍＋室內棚拍攝、課程影片、行銷影片、募資與短影片等影像素材，以及上市記者會、媒體報導、KOL 宣傳等推廣，並涵蓋 Hahow 平台 3 年維護營運。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="timeline tight">
+  <div class="container">
+    <div class="reveal" style="max-width: 720px;">
+      <span class="eyebrow">預計期程</span>
+      <h2>3 月起跑，9 月結案</h2>
+    </div>
+    <div class="timeline-grid reveal" style="margin-top: 28px;">
+      <div></div>
+      <div class="tl-head">3月</div>
+      <div class="tl-head">4月</div>
+      <div class="tl-head">5月</div>
+      <div class="tl-head">6月</div>
+      <div class="tl-head">7月</div>
+      <div class="tl-head">8月</div>
+      <div class="tl-head">9月</div>
+
+      <div class="tl-row-label">提案</div>
+      <div class="tl-cell"><div class="tl-bar" style="left: 50%; right: -50%;"></div></div>
+      <div class="tl-cell"><div class="tl-bar" style="left: 0; right: 60%;"></div></div>
+      <div class="tl-cell"></div><div class="tl-cell"></div><div class="tl-cell"></div><div class="tl-cell"></div><div class="tl-cell"></div>
+
+      <div class="tl-row-label">拍攝</div>
+      <div class="tl-cell"></div>
+      <div class="tl-cell"><div class="tl-bar" style="left: 50%; right: -50%;"></div></div>
+      <div class="tl-cell"><div class="tl-bar" style="left: 0; right: 60%;"></div></div>
+      <div class="tl-cell"></div><div class="tl-cell"></div><div class="tl-cell"></div><div class="tl-cell"></div>
+
+      <div class="tl-row-label">後製</div>
+      <div class="tl-cell"></div><div class="tl-cell"></div>
+      <div class="tl-cell"><div class="tl-bar" style="left: 50%; right: -50%;"></div></div>
+      <div class="tl-cell"><div class="tl-bar" style="left: 0; right: 60%;"></div></div>
+      <div class="tl-cell"></div><div class="tl-cell"></div><div class="tl-cell"></div>
+
+      <div class="tl-row-label">課程上架</div>
+      <div class="tl-cell"></div><div class="tl-cell"></div><div class="tl-cell"></div>
+      <div class="tl-cell"><div class="tl-bar" style="left: 50%; right: -10%;"></div></div>
+      <div class="tl-cell"><div class="tl-bar" style="left: -10%; right: 60%;"></div></div>
+      <div class="tl-cell"></div><div class="tl-cell"></div>
+
+      <div class="tl-row-label">宣傳</div>
+      <div class="tl-cell"></div><div class="tl-cell"></div>
+      <div class="tl-cell"><div class="tl-bar" style="left: 50%; right: -50%;"></div></div>
+      <div class="tl-cell"><div class="tl-bar" style="left: 0; right: -50%;"></div></div>
+      <div class="tl-cell"><div class="tl-bar" style="left: 0; right: -50%;"></div></div>
+      <div class="tl-cell"><div class="tl-bar" style="left: 0; right: -50%;"></div></div>
+      <div class="tl-cell"><div class="tl-bar" style="left: 0; right: 50%;"></div></div>
+
+      <div class="tl-row-label">結案</div>
+      <div class="tl-cell"></div><div class="tl-cell"></div><div class="tl-cell"></div><div class="tl-cell"></div><div class="tl-cell"></div><div class="tl-cell"></div>
+      <div class="tl-cell"><div class="tl-bar" style="left: 30%; right: 30%;"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final" id="contact">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">提案人 — Hahow 好學校 創辦人 江前緯 ｜ 12 年專業講師與團隊領導人 小飛</span>
+      <p class="final-quote">只要能挽救<span>一個生命</span>，就等於守護<span>一個家庭</span>的幸福，與一個社會的未來。</p>
+      <p class="final-sub">希望邀請您與貴公司，透過這堂專業永久的線上課程，一起保護每位熱愛臺灣這片土地的探險者。讓我們一起真正實踐：快快樂樂出門，平平安安回家。</p>
+      <div class="final-actions">
+        <a href="mailto:dylanwu@hahow.in?subject=【公益贊助諮詢】Hahow X 小飛 戶外戲水指南課程&amp;body=您好，%0D%0A%0D%0A我有興趣了解 Hahow X 小飛 公益贊助案的合作細節，請與我聯繫。%0D%0A%0D%0A公司名稱：%0D%0A聯絡人：%0D%0A聯絡電話：%0D%0A有興趣的方案：(A 聯合贊助 / B 主要贊助 / 客製化)%0D%0A%0D%0A謝謝！" class="btn btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          立即聯繫專案窗口
+        </a>
+        <a href="#plans" class="btn btn-lg btn-ghost">回到贊助方案</a>
+      </div>
+      <div class="final-meta">
+        <div>
+          <strong>公益課程贊助案</strong>
+          Hahow X 小飛｜全民通識課
+        </div>
+        <div>
+          <strong>聯繫窗口</strong>
+          <a href="mailto:dylanwu@hahow.in">dylanwu@hahow.in</a>
+        </div>
+        <div>
+          <strong>提案總預算</strong>
+          NT$ 450 萬
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot-inner">
+    <div class="foot-brand">
+      <img src="assets/hahow-logo-white.png" alt="Hahow 好學校" />
+      <span class="foot-brand-divider"></span>
+      <span>© 2026 Hahow 好學校 ｜ 戶外戲水指南課程公益贊助案</span>
+    </div>
+    <div>本提案內容著作權屬 Hahow 與小飛團隊所有，如需轉載請來信 <a href="mailto:dylanwu@hahow.in">dylanwu@hahow.in</a></div>
+  </div>
+</footer>
+
+<script>
+  // -------- Scroll progress --------
+  const scrollBar = document.getElementById('scrollBar');
+  const setBar = () => {
+    const sc = document.documentElement.scrollTop || document.body.scrollTop;
+    const max = (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    scrollBar.style.width = max > 0 ? (sc/max*100)+'%' : '0%';
+  };
+  document.addEventListener('scroll', setBar, {passive:true});
+  setBar();
+
+  // -------- Reveal on scroll --------
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // -------- Counter animation --------
+  const counters = document.querySelectorAll('[data-count]');
+  const formatNum = (n) => {
+    if (n >= 1000) return n.toLocaleString();
+    return Math.round(n).toString();
+  };
+  const animateCounter = (el) => {
+    const target = parseFloat(el.dataset.count);
+    const suffix = el.dataset.suffix || '';
+    const dur = 1400;
+    const start = performance.now();
+    const small = el.querySelector('small');
+    const small_html = small ? small.outerHTML : (suffix ? `<small>${suffix}</small>` : '');
+    const tick = (now) => {
+      const p = Math.min(1, (now - start) / dur);
+      const eased = 1 - Math.pow(1-p, 3);
+      const val = Math.round(target * eased * (target<10 ? 10 : 1)) / (target<10 ? 10 : 1);
+      el.innerHTML = formatNum(val) + small_html;
+      if (p < 1) requestAnimationFrame(tick);
+      else el.innerHTML = formatNum(target) + small_html;
+    };
+    requestAnimationFrame(tick);
+  };
+  const cio = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        animateCounter(e.target);
+        cio.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.4 });
+  counters.forEach(el => cio.observe(el));
+
+  // -------- Plan tabs --------
+  const tabs = document.querySelectorAll('.plan-tab');
+  const planA = document.querySelector('.plan-card.a');
+  const planB = document.querySelector('.plan-card.b');
+  const grid = document.getElementById('planGrid');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', 'false'));
+    t.setAttribute('aria-selected', 'true');
+    const tgt = t.dataset.target;
+    if (tgt === 'both') {
+      planA.style.display = ''; planB.style.display = '';
+      planA.dataset.active = 'false'; planB.dataset.active = 'false';
+      grid.style.gridTemplateColumns = '';
+    } else if (tgt === 'a') {
+      planA.style.display = ''; planB.style.display = 'none';
+      planA.dataset.active = 'true'; planB.dataset.active = 'false';
+      grid.style.gridTemplateColumns = '1fr';
+    } else {
+      planA.style.display = 'none'; planB.style.display = '';
+      planA.dataset.active = 'false'; planB.dataset.active = 'true';
+      grid.style.gridTemplateColumns = '1fr';
+    }
+  }));
+
+  // -------- Smooth scroll --------
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href');
+      if (id.length > 1) {
+        const t = document.querySelector(id);
+        if (t) {
+          e.preventDefault();
+          t.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>
